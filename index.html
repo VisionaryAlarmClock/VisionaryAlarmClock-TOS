@@ -16,7 +16,6 @@
 </head>
 <body class="bg-gray-50 text-gray-900 leading-relaxed">
 
-    <!-- Header Section -->
     <header class="bg-white border-b border-gray-200 py-8 px-4">
         <div class="max-w-3xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
             <div>
@@ -31,7 +30,6 @@
 
     <main class="max-w-3xl mx-auto py-8 sm:py-12 px-4 sm:px-6">
         
-        <!-- Navigation Tabs -->
         <div class="flex gap-4 sm:gap-8 mb-8 border-b border-gray-200 overflow-x-auto whitespace-nowrap">
             <button id="tab-tos" onclick="showContent('tos')" class="pb-4 px-2 active-tab transition-all">
                 Reliability & Terms
@@ -47,26 +45,22 @@
             </button>
         </div>
 
-        <!-- Content Card -->
         <article class="bg-white p-6 md:p-12 rounded-2xl shadow-sm border border-gray-100 min-h-[500px]">
             
-            <!-- SECTION 1: TERMS OF USE & RELIABILITY -->
             <div id="content-tos" class="animate-in fade-in duration-300">
                 <h2 class="text-2xl font-black mb-6 uppercase tracking-tight text-gray-800 border-b pb-2">Reliability & Terms</h2>
                 
                 <div class="space-y-8">
-                    <!-- The Balanced Explanation -->
                     <section class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg">
                         <h3 class="text-blue-800 font-bold mb-3 uppercase text-xs tracking-widest">A Note from the Developer</h3>
                         <p class="text-blue-900 leading-relaxed mb-4">
-                            In the development of <strong>Visionary Alarm Clock</strong>, I have utilized my professional expertise to prioritize high performance, a seamless user experience, and technical reliability. My objective is to provide a tool that works exactly as intended every time you set an alarm.
+                            In the development of <strong>Visionary Alarm Clock</strong>, I have prioritized high performance, a seamless user experience, and technical reliability. My objective is to provide a tool that works exactly as intended every time you set an alarm.
                         </p>
                         <p class="text-blue-900 leading-relaxed">
                             However, users must understand that software operates within a complex ecosystem of hardware and operating systems. While I have done my absolute best to ensure stability, no software developer can guarantee 100% reliability.
                         </p>
                     </section>
 
-                    <!-- Educational Section -->
                     <section class="bg-gray-50 p-6 rounded-xl border border-gray-200">
                         <h3 class="text-lg font-bold mb-3 flex items-center gap-2">
                             <span class="text-xl">⚠️</span> Technical Education
@@ -75,51 +69,64 @@
                             For an alarm to trigger, several physical and digital conditions must be met. An alarm will <strong>not</strong> work if:
                         </p>
                         <ul class="list-disc pl-5 space-y-2 text-sm text-gray-600">
-                            <li><strong>Hardware Power:</strong> The device has 0% battery or has powered down. Software cannot execute on a device without power.</li>
+                            <li><strong>Hardware Power:</strong> The device has 0% battery or has powered down.</li>
                             <li><strong>OS Termination:</strong> Mobile operating systems may forcefully close background apps to save memory or battery (e.g., "Deep Sleep" or "Battery Optimization").</li>
-                            <li><strong>System Settings:</strong> Permissions may be revoked by the OS during updates, or "Do Not Disturb" modes may silence all output.</li>
+                            <li><strong>System Settings:</strong> Permissions may be revoked by the OS, or "Do Not Disturb" modes may silence all output.</li>
                         </ul>
                     </section>
 
-                    <!-- THE EXPLICIT WAIVER -->
                     <section class="border-t pt-6">
-                        <h3 class="text-lg font-bold mb-3 text-red-700">Absolute Liability Disclaimer</h3>
-                        <p class="text-gray-800 font-bold mb-4 italic">
-                            I am not responsible for anything at all this app does or fails to do.
-                        </p>
-                        <p class="text-gray-600 text-sm leading-relaxed mb-4">
-                            This application is provided "as-is" and "as-available." While I have done my best for performance and reliability, I cannot and do not guarantee the app will work 100% of the time. 
-                        </p>
-                        <p class="text-gray-600 text-sm leading-relaxed font-semibold">
-                            Therefore, I warn that I take zero responsibility for any and all outcomes. This includes, but is not limited to, damages arising from the variables listed above, unforeseen technical errors, missed alarms, or any other circumstances we may have missed. 
-                        </p>
+                        <h3 class="text-lg font-bold mb-3 text-red-700 uppercase tracking-wide">Limitation of Liability & Disclaimer</h3>
+                        
+                        <div class="bg-gray-100 p-4 rounded text-xs text-gray-700 font-mono uppercase leading-relaxed mb-4">
+                            The application is provided "as is" and "as available" without warranties of any kind. The developer expressly disclaims all warranties, whether express or implied, including reliability and fitness for a particular purpose. 
+                            <br><br>
+                            In no event shall the developer be liable for any direct, indirect, incidental, or consequential damages—including, but not limited to, missed appointments, lost wages, loss of employment, or personal emergencies—arising out of the use or inability to use the application, even if advised of the possibility of such damages.
+                        </div>
                     </section>
 
                     <section class="bg-red-50 p-6 rounded-xl border border-red-100">
                         <h3 class="text-sm font-bold mb-2 text-red-800 uppercase tracking-widest">Final Usage Agreement</h3>
                         <p class="text-red-900 text-sm">
-                            By continuing to use Visionary Alarm Clock, you acknowledge that you have read this warning and agree that the developer is released from any and all liability. If you have an critical event, it is your responsibility to set a secondary backup alarm on a separate device.
+                            By continuing to use Visionary Alarm Clock, you acknowledge this warning and agree to release the developer from all liability. If you have a critical event, it is strictly your responsibility to set a secondary backup alarm on a separate physical device.
                         </p>
                     </section>
                 </div>
             </div>
 
-            <!-- SECTION 2: PRIVACY POLICY -->
             <div id="content-privacy" class="hidden animate-in fade-in duration-300">
-                <h2 class="text-2xl font-black mb-6 uppercase tracking-tight text-gray-800">Privacy Policy</h2>
+                <h2 class="text-2xl font-black mb-6 uppercase tracking-tight text-gray-800 border-b pb-2">Privacy Policy</h2>
                 <div class="space-y-8">
                     <section>
-                        <h3 class="text-lg font-bold mb-2">1. Your Privacy</h3>
-                        <p class="text-gray-600">We do not collect, store, or sell any personal data like your name or email. Everything stays on your device.</p>
+                        <h3 class="text-lg font-bold mb-2">1. Local Data Storage</h3>
+                        <p class="text-gray-600">
+                            Visionary Alarm Clock uses local device storage (Room Database) to save your alarm times, settings, and preferences. <strong>None of this data leaves your device</strong>. We do not collect, store, transmit, or sell any personal information.
+                        </p>
                     </section>
+                    
                     <section>
-                        <h3 class="text-lg font-bold mb-2">2. Ads (Google AdMob)</h3>
-                        <p class="text-gray-600">Google may use your device's ID to show ads. You can check their policy on their official site.</p>
+                        <h3 class="text-lg font-bold mb-2">2. Third-Party Advertising (Google AdMob)</h3>
+                        <p class="text-gray-600 mb-3">
+                            To keep this app free, we use <strong>Google AdMob</strong> to display advertisements. AdMob operates as a third-party service provider and may collect and use certain data to serve personalized ads.
+                        </p>
+                        <ul class="list-disc pl-5 space-y-2 text-sm text-gray-600 mb-3">
+                            <li>Google may use the <strong>Android Advertising ID</strong> (or similar device identifiers) to personalize the ads you see.</li>
+                            <li>You can opt out of personalized advertising at any time by navigating to your device's <em>Settings > Google > Ads</em>.</li>
+                        </ul>
+                        <p class="text-sm text-gray-500 italic">
+                            For more information on how Google uses data, please review the <a href="https://policies.google.com/technologies/ads" target="_blank" class="text-blue-600 underline">Google Privacy & Terms</a>.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h3 class="text-lg font-bold mb-2">3. Policy Updates</h3>
+                        <p class="text-gray-600 text-sm">
+                            This policy is effective as of the app's release and may be updated periodically. Continued use of the app constitutes acceptance of these terms.
+                        </p>
                     </section>
                 </div>
             </div>
 
-            <!-- SECTION 3: DATA TRANSPARENCY ARTICLE -->
             <div id="content-data" class="hidden animate-in fade-in duration-300">
                 <h2 class="text-2xl font-black mb-6 uppercase tracking-tight text-gray-800">How I Collect Data</h2>
                 <div class="prose prose-slate max-w-none">
@@ -150,7 +157,6 @@
                 </div>
             </div>
 
-            <!-- SECTION 4: FEEDBACK -->
             <div id="content-feedback" class="hidden animate-in fade-in duration-300">
                 <h2 class="text-2xl font-black mb-2 uppercase tracking-tight text-gray-800">Feedback Portal</h2>
                 <p class="text-gray-500 mb-8">Help improve the Visionary experience.</p>
